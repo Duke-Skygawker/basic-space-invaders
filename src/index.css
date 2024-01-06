@@ -1,0 +1,12 @@
+body {
+  background-color: black;
+  color: aliceblue;
+}
+h1 {
+  text-align: center;
+}
+canvas {
+  border: 2px red solid;
+  margin: 0 10rem;
+  object-fit: contain;
+}
