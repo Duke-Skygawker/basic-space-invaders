@@ -11,11 +11,9 @@ const dpi = window.devicePixelRatio;
 // Define canvas and context
 game.canvas = document.getElementById("canvas");
 game.ctx = game.canvas.getContext("2d");
-game.canvas.style.height = game.canvas.height / window.devicePixelRatio + "px";
-game.canvas.style.width = game.canvas.width / window.devicePixelRatio + "px";
 
 // Define background color
-game.backgroundColor = "#d3d3d326";
+game.backgroundColor = "#000";
 
 // The number of parts an asteroid is made of
 game.asteroidsParts = 8;
@@ -44,7 +42,7 @@ game.enemyStep = 5;
 game.update = function () {
   // Draw canvas background
   game.ctx.fillStyle = game.backgroundColor;
-  game.ctx.fillRect(0, 0, game.canvas.width + 0.5, game.canvas.height + 0.5);
+  game.ctx.fillRect(0, 0, game.canvas.width, game.canvas.height);
 
   // Draw player
   game.player.draw(game.ctx);
